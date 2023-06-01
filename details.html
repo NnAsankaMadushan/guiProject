@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Infinity Movie Hub - Details</title>
+  </head>
+  <body>
+    <!-- <p>Suggestions: <span class="span-details" id="txtHint"></span></p> -->
+
+    <div class="container" style="padding-top: 120px !important">
+      <h2 class="mb-5 text-center h-title h-title-details">
+        <span id="infinity-txt">INFINITY</span> MOVIE HUB
+      </h2>
+      <br>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4" style="padding: 25px !important">
+          <div id="poster-img" style="margin-top: 15px !important"></div>
+        </div>
+
+        <div class="col-sm-8" style="padding: 15px !important">
+          <div class="frs" style="padding: 15px !important">
+            <h2 class="mb-0">
+              <span class="span-details" id="txtTitle"></span>
+            </h2>
+            <div class="text-muted mb-2 pl-3">
+              <span class="span-details text-muted" id="txtYear"></span> | <span class="span-details text-muted" id="txtRuntime"></span> |
+              <span class="span-details text-muted" id="txtGenre"></span>
+            </div>
+            <h6 class="h6-details">
+              IMDb Rating:&nbsp;&nbsp;&nbsp;<i
+                class="fa fa-star"
+                style="color: #f6ca2a; font-size: 17px"
+              ></i
+              >&nbsp;<span
+                class="text-muted"
+                class="span-details" id="txtimdbRating"
+                style="font-size: 15px; font-weight: 700"
+              ></span
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMDb
+              Votes:&nbsp;&nbsp;&nbsp;<i
+                class="fa fa-heart"
+                style="color: #f6ca2a; font-size: 17px"
+              ></i
+              >&nbsp;<span
+                class="text-muted"
+                class="span-details" id="txtimdbVotes"
+                style="font-size: 15px; font-weight: 700"
+              ></span>
+            </h6 class="h6-details">
+            <hr />
+          </div>
+          <div
+            class="sec"
+            style="
+              padding: 15px;
+              background-color: #03030309;
+              border-radius: 5px;
+            "
+          >
+            <p class="span-details" id="txtPlot" class="pt-3" style="font-weight: 600"></p>
+            <h6 class="h6-details">
+              Released:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtReleased"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Rated:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtRated"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Awards:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtAwards"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Director:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtDirector"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Writer:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtWriter"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Actors:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtActors"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Language:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtLanguage"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+            <h6 class="h6-details">
+              Country:&nbsp;&nbsp;&nbsp;<span
+                class="text-dark txt-dark-details"
+                class="span-details" id="txtCountry"
+                style="font-weight: 400"
+              ></span>
+            </h6 class="h6-details">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let url_string = window.location.href;
+      let url = new URL(url_string);
+      let title = url.searchParams.get("title");
+      $(document).ready(() => {
+        $.get(
+          `https://www.omdbapi.com/?apikey=1c267eb1&t=${title}`,
+          function (data, status) {
+            $("#txtTitle").text(data.Title);
+            $("#txtimdbRating").text(data.imdbRating);
+            $("#txtimdbVotes").text(data.imdbVotes);
+            $("#poster-img").html(
+              `<img class="rounded" src=${data.Poster} alt=${data.Title}/>`
+            );
+            $("#txtYear").text(data.Year);
+            $("#txtRuntime").text(data.Runtime);
+            $("#txtGenre").text(data.Genre);
+            $("#txtLanguage").text(data.Language);
+            $("#txtPlot").text(data.Plot);
+            $("#txtReleased").text(data.Released);
+            $("#txtRated").text(data.Rated);
+            $("#txtAwards").text(data.Awards);
+            $("#txtDirector").text(data.Director);
+            $("#txtWriter").text(data.Writer);
+            $("#txtActors").text(data.Actors);
+            $("#txtCountry").text(data.Country);
+
+            document.title = `${data.Title} - Infinity Movie Hub`;
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

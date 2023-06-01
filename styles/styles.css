@@ -1,0 +1,42 @@
+body {
+  background-image: url("../assets/bg.png");
+  background-color: #cccccc;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.h-title {
+  color: white;
+  font-size: 20px;
+}
+.h-title {
+  margin-top: -37px;
+}
+#infinity-txt {
+  transform: rotate(28deg);
+  -ms-transform: rotate(70deg);
+  -webkit-transform: rotate(-14deg) !important;
+  display: inline-block;
+  font-weight: bolder;
+  color: darkorange;
+  font-size: 45px;
+  transform: translateX(45px);
+}
+
+.h6-details {
+  color: white;
+}
+
+.span-details {
+  color: white;
+}
+
+.txt-dark-details {
+  color: rgba(255, 255, 255, 0.616) !important;
+}
+
+hr {
+  border-top: 1px solid rgb(255, 255, 255);
+}
